@@ -1,3 +1,4 @@
+// 공연료 청구서 출력.
 function statement(invoice, plays) {
   let totalAmount = 0;
   let volumeCredits = 0;
@@ -28,9 +29,11 @@ function statement(invoice, plays) {
         throw new Error(`알 수 없는 장르: ${play.type}`)
     }
     
+    // 포인트 적립
     volumeCredits += Math.max(perf.audience - 30, 0);
     if ("comedy" === play.type) volumeCredits += Math.floor(perf.audience / 5);
 
+    // 청구 내역 출력.
     result += `${play.type}: ${format(thisAmount/100)} (${perf.audience}석)\n`;
     totalAmount += thisAmount;
   }

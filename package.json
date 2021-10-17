@@ -1,0 +1,24 @@
+{
+  "name": "refactoring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^9.1.3"
+  },
+  "scripts": {
+    "test": "mocha Chapter_04/sample.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KimSejune/refactoring.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KimSejune/refactoring/issues"
+  },
+  "homepage": "https://github.com/KimSejune/refactoring#readme"
+}
